@@ -43,7 +43,7 @@ joblib==1.4.2
 transformers==4.41.1
 
 # FIXED TORCH VERSION FOR PYTHON 3.11+
-torch==2.2.2
+torch==2.1.2
 
 beautifulsoup4==4.12.3
 feedparser==6.0.11
