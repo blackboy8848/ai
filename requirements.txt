@@ -1,6 +1,6 @@
 # ============================================================
 # TRADING SYSTEM — requirements.txt
-# Run: pip install -r requirements.txt
+# Compatible with Python 3.11+ (Render)
 # ============================================================
 
 # --- Web Framework ---
@@ -14,7 +14,7 @@ bcrypt>=4.1.0
 email-validator>=2.0.0
 pyotp==2.9.0
 
-# --- Cryptography (for AES encryption in auth/encryption.py) ---
+# --- Cryptography ---
 cryptography==42.0.8
 
 # --- Database ---
@@ -30,7 +30,7 @@ aiohttp==3.9.5
 smartapi-python==1.3.4
 
 # --- Data Processing ---
-numpy
+numpy>=1.26.0
 pandas-ta
 
 # --- AI/ML ---
@@ -41,7 +41,10 @@ joblib==1.4.2
 
 # --- NLP / News Sentiment ---
 transformers==4.41.1
-torch==2.3.0
+
+# FIXED TORCH VERSION FOR PYTHON 3.11+
+torch==2.2.2
+
 beautifulsoup4==4.12.3
 feedparser==6.0.11
 newspaper3k==0.2.8
@@ -49,7 +52,7 @@ newspaper3k==0.2.8
 # --- Caching / Pub-Sub ---
 redis[asyncio]==5.0.4
 
-# --- Configuration (pydantic-settings reads .env files) ---
+# --- Configuration ---
 pydantic==2.7.1
 pydantic-settings==2.2.1
 python-dotenv==1.0.1
@@ -57,7 +60,7 @@ python-dotenv==1.0.1
 # --- Scheduling ---
 apscheduler==3.10.4
 
-# --- Logging (structlog = structured JSON logs) ---
+# --- Logging ---
 structlog==24.2.0
 
 # --- Utilities ---
