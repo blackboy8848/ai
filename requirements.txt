@@ -31,7 +31,7 @@ smartapi-python==1.3.4
 
 # --- Data Processing ---
 numpy>=1.26.0
-pandas-ta==0.3.14b0
+pandas-ta==0.4.71b0
 
 # --- AI/ML ---
 scikit-learn==1.5.0
